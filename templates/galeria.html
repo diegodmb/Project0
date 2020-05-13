@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block main%}
+<div class="masonry-layout">
+    {% for img in imgs %}
+    <div class="masonry-layout__panel">
+        <div class="masonry-layout__panel-content">
+            <img class="img" src="{{ path ~ '/' ~ img }}" alt="">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

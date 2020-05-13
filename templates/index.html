@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block main%}
+<main>
+
+    <div class="titular">
+        <p>Welcome!</p>
+        <p>This is My Portfolio</p>
+    </div>
+
+    <div class="elipse1"><img src="../static/Bub.png" alt=""></div>
+    <div class="elipse2"><img src="../static/Bub.png" alt=""></div>
+    <div class="elipse3"><img src="../static/Bub.png" alt=""></div>
+    <div class="elipse4"><img src="../static/Bub.png" alt=""></div>
+    <div class="back1"><img src="{{ '../static/img/A' ~ rands[0] ~ '.png' }}" alt=""></div>
+    <div class="back2"><img src="{{ '../static/img/A' ~ rands[1] ~ '.png' }}" alt=""></div>
+    <div class="back3"><img src="{{ '../static/img/A' ~ rands[2] ~ '.png' }}" alt=""></div>
+    <div class="back4"><img src="{{ '../static/img/A' ~ rands[3] ~ '.png' }}" alt=""></div>
+    <div class="botones">
+        <span class="boton"><a href="{{ url_for('portfolio') }}">Portfolio</a></span>
+        <span class="boton"><a href="/contact">Contact Me</a></span>
+    </div>
+</main>
+{% endblock %}

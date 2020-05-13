@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1F0E2E;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.brand {
+  font-size: larger;
+  line-height: 10%;
+}
+
+.brand2 {
+  font-size: small;
+  position: absolute;
+  top: 5vh;
+  padding-left: 3vw;
+  background: transparent;
+}
+
+.items {
+  padding: 20px;
+}
+
+/* Landing */
+main {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 10vh;
+  background: #1F0E2E;
+  -ms-grid-columns: 35% 55% 10%;
+      grid-template-columns: 35% 55% 10%;
+  -ms-grid-rows: 55% 30% 15%;
+      grid-template-rows: 55% 30% 15%;
+      grid-template-areas: ". . ." " . titular ." ". botones .";
+}
+
+/* This is my Portfolio */
+.titular {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: titular;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.titular p {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 50;
+  font-size: 70px;
+  color: #EFEFEF;
+  text-align: center;
+  line-height: 70%;
+}
+
+.botones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: botones;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.boton {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 2px solid #EFEFEF;
+  background: transparent;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #EFEFEF;
+  color: #1F0E2E;
+  font-weight: bold;
+}
+
+.boton a {
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+.boton a:hover {
+  color: #1F0E2E;
+}
+
+.elipse1 img {
+  position: absolute;
+  bottom: 0vh;
+  left: -5vw;
+  width: 15vw;
+  overflow: hidden;
+}
+
+.elipse2 img {
+  position: absolute;
+  bottom: 30vh;
+  left: 15vw;
+  width: 18vw;
+  overflow: hidden;
+}
+
+.elipse3 img {
+  position: absolute;
+  bottom: 45vh;
+  left: 45vw;
+  width: 23vw;
+}
+
+.elipse4 img {
+  position: absolute;
+  bottom: 35vh;
+  left: 80vw;
+  width: 20vw;
+  overflow: hidden;
+}
+
+.back1 {
+  position: absolute;
+  bottom: 3vh;
+  left: -2vw;
+  z-index: 3;
+}
+
+.back1 img {
+  width: 15vw;
+}
+
+.back2 {
+  position: absolute;
+  bottom: 27vh;
+  left: 17vw;
+  z-index: 3;
+}
+
+.back2 img {
+  width: 20vw;
+}
+
+.back3 {
+  position: absolute;
+  bottom: 45vh;
+  left: 47vw;
+  z-index: 3;
+}
+
+.back3 img {
+  width: 23vw;
+}
+
+.back4 {
+  position: absolute;
+  bottom: 36vh;
+  left: 78vw;
+  z-index: 3;
+}
+
+.back4 img {
+  width: 20vw;
+}
+
+/* Inicio Portfolio */
+.portfolio {
+  background-color: #1F0E2E;
+  margin-top: 4vh;
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.albumes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel {
+  height: 90vh;
+  width: 60vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.d-block {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 80vw;
+  height: 100%;
+}
+
+.carousel-item {
+  height: 80vh;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  border: 3px solid white;
+}
+
+.carousel-caption {
+  background: transparent;
+  font-size: 2em;
+}
+
+.carousel-caption p {
+  background: transparent;
+  font-size: 1em;
+}
+
+.carousel-control-prev {
+  height: 80vh;
+}
+
+.carousel-control-next {
+  height: 80vh;
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 80vh;
+  background: transparent;
+}
+
+input[type=submit] {
+  padding: 5px 10px;
+  margin: 8px 0;
+  color: white;
+  opacity: .8;
+  background-color: black;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Galeria */
+.masonry-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  height: 100vw;
+}
+
+.masonry-layout__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.img {
+  width: 95%;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+/* Contact */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabla {
+  margin-top: 10vh;
+  color: white;
+  font-size: larger;
+}
+
+.formulario {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 10px auto 0px;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background: url(../static/img/Amsterdam/dsc_0211_02_14750407168_o.jpg) left -80px;
+  color: #fff;
+}
+
+.row.body {
+  padding: .5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  font-size: pxtoem(45, 16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: pxtoem(20, 16);
+  margin: 1em 0 0.4em 0;
+}
+
+.btn {
+  font-size: pxtoem(17, 16);
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.btn:hover {
+  background-color: #bfbfbf;
+}
+
+.btn.btn-submit {
+  background-color: #4f6fad;
+  border-bottom-color: #374d78;
+}
+
+.btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+
+form ul li:last-child {
+  margin: 0;
+}
+
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+form ul li p.right {
+  float: right;
+}
+
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ee9cb4), to(#4f6fad));
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+
+form ul li .req {
+  color: #ee9cb4;
+}
+
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: pxtoem(16, 16);
+}
+
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: pxtoem(16, 16);
+}
+
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+  }
+  input {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+  li, p {
+    width: 100%;
+  }
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+  h1 {
+    font-size: pxtoem(36, 16);
+  }
+  h3 {
+    font-size: pxtoem(18, 16);
+  }
+  li small {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
